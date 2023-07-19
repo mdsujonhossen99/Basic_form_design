@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #02022a,
+    #010535,
+    #000740,
+    #00084b,
+    #000655,
+    #03176a,
+    #03277f,
+    #003894,
+    #005db5,
+    #0082cf,
+    #00a6e4,
+    #00caf4
+  );
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-prt {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 26px;
+  border-radius: 6px;
+  box-shadow: 2px 3px 23px -5px gray;
+}
+h2 {
+  text-align: start;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+.down-line {
+  width: 45px;
+  height: 3px;
+  background-image: linear-gradient(
+    to right,
+    #02022a,
+    #010535,
+    #000740,
+    #00084b,
+    #000655,
+    #03176a,
+    #03277f,
+    #003894,
+    #005db5,
+    #0082cf,
+    #00a6e4,
+    #00caf4
+  );
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.flex {
+  display: flex;
+}
+.flex label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.user-details #fullname,
+#username,
+#email,
+#phone,
+#pass,
+#confirm-pass {
+  display: flex;
+  padding: 6px 14px;
+  margin: 12px 0px 30px 0px;
+  font-size: 0.9rem;
+  border: 1px solid gray;
+  border-radius: 6px;
+  box-shadow: 3px 3px 26px -8px gray inset;
+  width: 14vw;
+}
+.user-details #fullname,
+#username,
+#email,
+#phone,
+#pass,
+#confirm-pass:focus {
+  outline: none;
+  border-style: inset;
+  border: 2px solid gray;
+}
+.gender-select {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+.gender-select input {
+  margin-right: 16px;
+  cursor: pointer;
+}
+.combine {
+  margin: 0px 40px 0px 40px;
+}
+h3 {
+  margin: 0px 0px 20px 0px;
+  text-align: start;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+.btn {
+  text-align: center;
+}
+button {
+  padding: 11px 20px;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #02022a,
+    #010535,
+    #000740,
+    #00084b,
+    #000655,
+    #03176a,
+    #03277f,
+    #003894,
+    #005db5,
+    #0082cf,
+    #00a6e4,
+    #00caf4
+  );
+  background-repeat: no-repeat;
+  border-radius: 7px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.8s ease-in-out;
+}
+button:hover {
+  background-image: linear-gradient(
+    to left,
+    #05011d,
+    #070225,
+    #08022e,
+    #070336,
+    #05033e,
+    #041653,
+    #042668,
+    #00367e,
+    #005ca4,
+    #0082c6,
+    #00aae4,
+    #02d3fe
+  );
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 720px) {
+  .flex {
+    flex-direction: column;
+  }
+  .user-details #fullname,
+  #username,
+  #email,
+  #phone,
+  #pass,
+  #confirm-pass {
+    display: flex;
+    padding: 6px 14px;
+    margin: 8px 0px 12px 0px;
+    font-size: 0.7rem;
+    color: #848484;
+    border-radius: 6px;
+    box-shadow: 3px 3px 26px -8px gray inset;
+    width: 100%;
+  }
+  .combine {
+    margin: 0px 40px 0px 15px;
+  }
+  .flex label {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .gender-select input {
+    margin-right: 5px;
+  }
+  .gender-select {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+  }
+  .combine {
+    margin: 0px 30px 0px 30px;
+  }
+}

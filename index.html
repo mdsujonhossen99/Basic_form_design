@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Form Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-prt">
+      <form action="#" class="user-details">
+        <div>
+          <h2 class="title">Registration</h2>
+          <div class="down-line"></div>
+        </div>
+        <div class="flex">
+          <div class="combine">
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="combine">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter your username"
+            />
+          </div>
+        </div>
+        <div class="flex">
+          <div class="combine">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your mail address"
+            />
+          </div>
+          <div class="combine">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Enter your number"
+            />
+          </div>
+        </div>
+        <div class="flex">
+          <div class="combine">
+            <label for="pass">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="pass"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="combine">
+            <label for="confirm-pass">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-pass"
+              id="confirm-pass"
+              placeholder="Confirm your password"
+            />
+          </div>
+        </div>
+        <h3>Gender</h3>
+        <div class="gender-select">
+          <span><input type="radio" name="gender" id="" />Male</span>
+          <span><input type="radio" name="gender" id="" />Female</span>
+          <span><input type="radio" name="gender" id="" />Other</span>
+        </div>
+        <div class="btn">
+          <button>Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
